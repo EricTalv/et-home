@@ -1,0 +1,63 @@
+
+.bg-container {
+  height: 99%;
+
+  min-height: 600px;
+
+  position: absolute;
+  right: 5%;
+
+  top: 0;
+}
+
+.img-bg-lines {                
+  height: 100%;
+  width: 13rem;
+}
+
+.bg__title {                    
+  color: #C4C4C4;
+  font-family: "Glusp";
+  position: absolute;
+  background-color: #242424;
+  margin: 0;
+  font-size: 8rem;
+  text-align: right;
+  bottom: 10%;
+  right: -1%;
+
+  padding: 15px 0;
+
+
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+}
+
+.bg__title--text {
+  height: 70px;
+}
+
+.bg__title--first-letter {
+  display: inline-block;
+  transform: rotateY(180deg);
+  margin-right: -.4rem;
+
+}
+
+/* media queries */
+
+// tablet
+@media only screen and (max-width: $bp-tablet) {
+  .bg__title--text {
+    height: 60px;
+  }
+}
+
+// mobile
+@media only screen and (max-width: $bp-mobile) {
+  .bg__title--text {
+    height: 50px;
+  }
+}

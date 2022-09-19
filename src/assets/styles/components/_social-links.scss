@@ -1,0 +1,32 @@
+
+/* list */
+.social__links__list {
+  list-style: none;
+  padding: 0;
+}
+
+/* list-item */
+.social__link__item::before {
+  content: '';
+  background-image:  url('../../assets/images/link-arrow.svg');
+  background-size: 1rem;
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding: 13px 13px 13px 0;
+  margin-right: 2px;
+}
+
+
+/* link */
+.social__link {
+  text-decoration: none;
+  color: $primary-color;
+  font-size: 3rem;
+  font-family: 'Space Mono', monospace;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.social__link:hover {
+  text-decoration: line-through;
+}

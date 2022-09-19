@@ -1,0 +1,38 @@
+
+/* root */
+:root {
+  font-size: 62.5%;
+}
+
+
+/* tags */
+
+html,
+body,
+main {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $bg-color;
+  font-weight: normal;
+
+}
+
+/* media queries*/
+
+// tablet
+@media only screen and (max-width: $bp-tablet) {
+  :root {
+    font-size: 52.5%;
+  }
+}
+
+// mobile
+@media only screen and (max-width: $bp-mobile) {
+  :root {
+    font-size: 42.5%;
+  }
+}

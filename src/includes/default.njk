@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html class="{{ htmlClass }}" lang="{{ site.lang }}">
+  
+  <head>
+   {% include "./partials/_head.njk" %}
+  </head>
+
+  <body class="{{ bodyClass }}">
+
+    <main>
+      <div class="content-wrapper">
+        <div class="content">
+          {{ content | safe }}
+        </div>
+      </div>
+    </main>
+
+    {% include "./partials/_scripts.njk" %}
+  </body>
+</html>

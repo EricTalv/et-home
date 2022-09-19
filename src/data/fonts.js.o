@@ -1,0 +1,77 @@
+const FontStyle = {
+  NORMAL: 'normal',
+  ITALIC: 'italic',
+};
+
+const FontDisplay = {
+  SWAP: 'swap',
+};
+
+const FontVariant = {
+  Light: 'Light',
+  Regular: 'Regular',
+  Bold: 'Bold',
+  Italic: 'Italic',
+  BoldItalic: 'Bold Italic',
+};
+
+const path = require('path');
+
+/** Helper to auto-prefix a font src url with the path to local fonts. */
+const getFontUrl = (src) => path.join('/assets/fonts', src);
+
+const fonts = {
+  display: {
+    family: 'Glusp',
+    fallbacks: [
+      `Times New Roman`,
+      `sans-serif`,
+    ],
+    weights: {
+      regular: {
+        variant: FontVariant.Regular,
+        weight: 400,
+        style: FontStyle.NORMAL,
+        url: getFontUrl('glusp.woff2'),
+        display: FontDisplay.SWAP,
+      }
+    },
+  },
+  body: {
+    family: 'Space Mono',
+    fallbacks: [`Monaco`, `Consolas`, `Courier New`, `monospace`],
+    weights: {
+
+      regular: {
+        variant: FontVariant.Regular,
+        weight: 400,
+        style: FontStyle.NORMAL,
+        url: getFontUrl('SpaceMono-Regular.woff2'),
+        display: FontDisplay.SWAP,
+      },
+      regularItalic: {
+        variant: FontVariant.Italic,
+        weight: 400,
+        style: FontStyle.ITALIC,
+        url: getFontUrl('SpaceMono-Italic.woff2'),
+        display: FontDisplay.SWAP,
+      },
+      bold: {
+        variant: FontVariant.Bold,
+        weight: 700,
+        style: FontStyle.NORMAL,
+        url: getFontUrl('SpaceMono-Bold.woff2'),
+        display: FontDisplay.SWAP,
+      },
+      boldItalic: {
+        variant: FontVariant.BoldItalic,
+        weight: 700,
+        style: FontStyle.ITALIC,
+        url: getFontUrl('SpaceMono-BoldItalic.woff2'),
+        display: FontDisplay.SWAP,
+      },
+    },
+  },
+};
+
+module.exports = fonts;
