@@ -10,7 +10,7 @@
     "start": "cross-env NODE_ENV=development  npm-run-all -l clean --parallel start:*",
     "start:webpack": "webpack --watch",
     "start:eleventy": "eleventy --serve",
-    "build": "cross-env NODE_ENV=production npm-run-all -l clean build:*",
+    "build": "cross-env NODE_ENV=production npm-run-all -l clean build:* ",
     "build:webpack": "webpack",
     "build:eleventy": "eleventy",
     "analyze": "npm-run-all build analyze:*",

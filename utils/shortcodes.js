@@ -18,7 +18,6 @@ const isFullUrl = (url) => {
 
 const manifestPath = path.resolve(__dirname, '../_site/assets/manifest.json');
 
-
 module.exports = {
   // Allow embedding markdown in `.njk` files
   // {% markdown %}
@@ -48,8 +47,6 @@ module.exports = {
       <use xlink:href="/assets/images/sprite.svg#${name}"></use>
     </svg>`;
   },
-
- 
 
   // Allow embedding responsive images
   // {% image "image.jpeg", "Image alt", "Image title", "my-class" %}
@@ -98,13 +95,11 @@ module.exports = {
         )
         .join('')}
       <img
-        onerror="this.style.display='none'"
         class="${className ? `img-${className}` : ''}"
         loading="${lazy ? 'lazy' : 'eager'}"
         src="${fallback.url}"
         width="${fallbackWidth ?? fallback.width}"
         height="${fallbackHeight ?? fallback.height}" alt="${alt}">
-        
     </picture>`;
     return title
       ? outdent({ newline: '' })`
@@ -114,4 +109,4 @@ module.exports = {
       </figure>`
       : picture;
   }
-};
+}
