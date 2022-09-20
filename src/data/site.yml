@@ -4,5 +4,5 @@ title: Eric Talviste
 # see https://ogp.me/#types
 type: website
 url: https://erictalviste.com/
-image: https://raw.githubusercontent.com/EricTalv/et-home/main/src/assets/images/og-img2.png
-description: Eric Talviste Homepage
+image: https://github.com/EricTalv/et-home/blob/main/src/assets/images/og-img.png?raw=true
+description: Eric Talviste | Web Development
