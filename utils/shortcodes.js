@@ -95,6 +95,7 @@ module.exports = {
         )
         .join('')}
       <img
+        onerror="this.style.display='none'"
         class="${className ? `img-${className}` : ''}"
         loading="${lazy ? 'lazy' : 'eager'}"
         src="${fallback.url}"

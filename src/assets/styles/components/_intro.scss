@@ -6,7 +6,6 @@
   color: $primary-color;
   font-family: 'Space Mono', monospace;
   font-weight: normal;
-  position: relative;
 }
 
 /* list */
@@ -40,4 +39,14 @@
   margin-right: 10px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+
+/* media */
+@media screen and (max-width: $xs-bp-mobile) {
+  .intro-container {
+    position: relative;
+    z-index: 2;
+    background-color: $bg-color;
+  }
 }
