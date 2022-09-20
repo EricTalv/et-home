@@ -61,3 +61,12 @@
     height: 50px;
   }
 }
+
+// xs mobile
+@media only screen and (max-width: $xs-bp-mobile) {
+  .bg__title--text {
+    font-size: 6rem;
+    height: 30px;
+
+  }
+}
