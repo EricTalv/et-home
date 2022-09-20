@@ -36,3 +36,11 @@ body {
     font-size: 42.5%;
   }
 }
+
+// extra small mobile
+@media only screen and (max-width: $xs-bp-mobile) {
+  :root {
+    font-size: 34.5%;
+  }
+}
+
