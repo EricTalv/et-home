@@ -41,12 +41,3 @@
   background-repeat: no-repeat;
 }
 
-
-/* media */
-@media screen and (max-width: $xs-bp-mobile) {
-  .intro-container {
-    position: relative;
-    z-index: 2;
-    background-color: $bg-color;
-  }
-}
